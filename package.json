@@ -1,0 +1,22 @@
+{
+  "name": "mentorApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:back": "cd server && npm start",
+    "start:web": "cd app && npm run web",
+    "start:android": "cd app && npm run android"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aiden007700/mentorApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aiden007700/mentorApp/issues"
+  },
+  "homepage": "https://github.com/Aiden007700/mentorApp#readme"
+}
