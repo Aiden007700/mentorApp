@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:back": "cd server && npm start",
+    "start": "cd server && npm start",
     "start:web": "cd app && npm run start:web",
     "start:mobile": "cd app && npm run start:mobile",
     "start:android": "cd app && npm run android"
