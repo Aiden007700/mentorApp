@@ -1,5 +1,12 @@
 import React from "react";
-import { StyleSheet, View, SafeAreaView, Animated, Text } from "react-native";
+import {
+  StyleSheet,
+  View,
+  SafeAreaView,
+  Animated,
+  Text,
+  TextInput,
+} from "react-native";
 import commonStyles from "common/themes/styles";
 import NavigationBar from "common/components/NavigationBar";
 
@@ -7,9 +14,17 @@ const SignIn = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.mainContainer}>
       <View style={styles.appContainer}>
-        <Text style={[styles.animatedText]} >
-          {"SignIn"}
-        </Text >
+        <Text style={[styles.animatedText]}>{"SignIn"}</Text>
+        <TextInput
+          placeholder={"login"}
+          style={styles.textInput}
+          onChangeText={(text) => console.log(text)}
+        />
+        <TextInput
+          placeholder={"password"}
+          style={styles.textInput}
+          onChangeText={(text) => console.log(text)}
+        />
         <View />
         <NavigationBar navigation={navigation} />
       </View>
@@ -46,6 +61,9 @@ const styles = StyleSheet.create({
     fontWeight: "900",
     color: "white",
     alignSelf: "center",
+  },
+  textInput: {
+    backgroundColor: "white",
   },
 });
 
